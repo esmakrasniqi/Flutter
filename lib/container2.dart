@@ -34,9 +34,9 @@ class MyApp extends StatelessWidget {
             title: Text('Menu'),
             centerTitle: true,
           ),
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.end,
+          body: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 width: 50,
@@ -54,7 +54,8 @@ class MyApp extends StatelessWidget {
                 color: Colors.green,
               ),
               Container(
-                width: double.infinity, //make container full screen
+                height: double.infinity,
+                width: 0, //make container full screen
               ),
             ],
           )),
